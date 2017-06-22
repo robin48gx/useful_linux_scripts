@@ -1,0 +1,4 @@
+
+
+plot "sim.dat" using 1:3 with lines
+!sleep 20

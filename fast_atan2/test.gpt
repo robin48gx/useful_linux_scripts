@@ -1,0 +1,4 @@
+
+
+plot "test.txt" using 8:14 with lines
+!sleep 2000
