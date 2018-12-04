@@ -137,3 +137,7 @@ export EDITOR vi
 PS1="$GREEN\$(date +%Y-%m-%d_%H:%M) \w$RED \$(formattedGitBranch)$GREEN \n\$ "
 
 export PATH="$PATH:"/opt/microchip/xc8/v1.34/bin""
+
+# Death to capslock !
+setxkbmap -option caps:none
+
