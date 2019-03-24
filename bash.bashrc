@@ -95,6 +95,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cb='indent -kr -l200 -lc200 -cli2 -i4 -nut -linux $1'
 alias en='enscript -2 -r %E  $1'
+alias remove_spaces_from_file_names='for f in *\ *; do mv "$f" "${f// /_}"; done'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
