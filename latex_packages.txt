@@ -1,0 +1,5 @@
+Latex packages list --- new virtual machines and rpis always bneeds extra latex packages
+
+
+texlive-latex-extra
+texlive-science
