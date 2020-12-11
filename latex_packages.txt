@@ -1,4 +1,5 @@
-Latex packages list --- new virtual machines and rpis always bneeds extra latex packages
+Latex packages list --- new virtual machines and rpis always seem to need extra latex packages
+to compile all my tex docuemnts. List all required packages here:
 
 
 texlive-latex-extra
