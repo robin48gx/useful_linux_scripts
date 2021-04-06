@@ -1,3 +1,1 @@
-# useful_unix_scripts
-# useful_linux_scripts
-# useful_linux_scripts
+Linux setup scripts and general purose notes
