@@ -138,6 +138,15 @@ export EDITOR vi
  
 PS1="$GREEN\$(date +%Y-%m-%d_%H:%M) \w$RED \$(formattedGitBranch)$GREEN \n\$ "
 
+
+# show path and git branch in title of gnome terminal window
+#
+export git_branch=$(formattedGitBranch)
+echo $git_branch
+#PROMPT_COMMAND='echo -ne "\033]0;SOME TITLE HERE\007"'
+PROMPT_COMMAND='echo -ne "\033]0; `pwd`  $git_branch \007"'
+
+
 export PATH="$PATH:"/opt/microchip/xc8/v1.34/bin""
 
 # Death to capslock !
