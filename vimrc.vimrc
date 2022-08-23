@@ -10,6 +10,7 @@ inoremap <right> <esc><right>
 inoremap <up> <esc><up>
 inoremap <down> <esc><down>
 
+" this defaults vi to show line numbers on the lhs; you can turn this off with :set nonu
 set nu
 set hlsearch
 set incsearch
@@ -58,6 +59,13 @@ function! SKEL_spec()
 	setf spec
 endfunction
 autocmd BufNewFile	*.spec	call SKEL_spec()
+autocmd bnf             *.spec	call SKEL_spec()
+export git_branch=$(formattedGitBranch)
+echo $git_branch
+#PROMPT_COMMAND='echo -ne "\033]0;SOME TITLE HERE\007"'
+PROMPT_COMMAND='echo -ne "\033]0; `pwd`  $git_branch \007"'
+
+
 " filetypes
 filetype plugin on
 filetype indent on
