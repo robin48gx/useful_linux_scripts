@@ -11,7 +11,7 @@ inoremap <down> <esc><down>
 set nu
 set hlsearch
 set incsearch
-
+set title
 "
 "
 " from vim forum http://vim.wikia.com/wiki/Show_fileencoding_and_bomb_in_the_status_line
