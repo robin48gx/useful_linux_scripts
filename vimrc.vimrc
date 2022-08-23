@@ -1,6 +1,7 @@
 
 " Old vi users expect that if you are in INSERT mode and an arrow key is pressed it will hop back into
-" command mode. New users find this very frustrating. I find it frustrating that it stays in insert mode because I am old RPC 23AUG2022.
+" command mode. New users find this very frustrating (BEEP BEEP BEEP BANG WHY IS IT DOING THIS!).
+" I find it frustrating that it stays in insert mode because I am old RPC 23AUG2022.
 " go back to command mode
 " as soon as a cursor key is pressed
 "
