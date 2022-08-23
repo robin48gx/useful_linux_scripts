@@ -1,7 +1,8 @@
 
-"
+" Old vi users expect that if you are in INSERT mode and an arrow key is pressed it will hop back into
+" command mode. New users find this very frustrating. I find it frustrating that it stays in insert mode because I am old RPC 23AUG2022.
 " go back to command mode
-" as soon as a curcor key is pressed
+" as soon as a cursor key is pressed
 "
 inoremap <left> <esc><left>
 inoremap <right> <esc><right>
