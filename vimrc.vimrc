@@ -11,6 +11,8 @@ inoremap <down> <esc><down>
 set nu
 set hlsearch
 set incsearch
+"
+" this sets the title in a gnome terminal window, shows which file is being edited by VIM
 set title
 "
 "
