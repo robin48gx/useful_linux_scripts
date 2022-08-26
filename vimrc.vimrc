@@ -1,8 +1,7 @@
 
-" Old vi users expect that if you are in INSERT mode and an arrow key is pressed it will hop back into
-" command mode. New users find this very frustrating (BEEP BEEP BEEP BANG WHY IS IT DOING THIS!).
-" I find it frustrating that it stays in insert mode because I am old RPC 23AUG2022.
-" go back to command mode
+" Original vi users expect that if you are in INSERT mode and an arrow key is pressed it will hop back into
+" command mode. 
+" On cursor key go back to command mode
 " as soon as a cursor key is pressed
 "
 inoremap <left> <esc><left>
@@ -17,6 +16,11 @@ set incsearch
 "
 " this sets the title in a gnome terminal window, shows which file is being edited by VIM
 set title
+"
+" this resets the window title when vim exits
+"
+set titleold=
+"
 "
 "
 " from vim forum http://vim.wikia.com/wiki/Show_fileencoding_and_bomb_in_the_status_line
