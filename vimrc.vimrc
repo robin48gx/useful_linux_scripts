@@ -18,7 +18,6 @@ set incsearch
 set title
 "
 " this resets the window title when vim exits
-"
 set titleold=
 "
 "
@@ -67,6 +66,8 @@ autocmd bnf             *.spec	call SKEL_spec()
 export git_branch=$(formattedGitBranch)
 echo $git_branch
 #PROMPT_COMMAND='echo -ne "\033]0;SOME TITLE HERE\007"'
+"
+" This set the title for a gnome terminal window, so directory and git branch
 PROMPT_COMMAND='echo -ne "\033]0; `pwd`  $git_branch \007"'
 
 
