@@ -4,3 +4,4 @@ to compile all my tex docuemnts. List all required packages here:
 
 texlive-latex-extra
 texlive-science
+texlive-science-doc
