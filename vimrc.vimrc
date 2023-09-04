@@ -13,6 +13,9 @@ inoremap <down> <esc><down>
 set nu
 set hlsearch
 set incsearch
+
+" turn of syntax highlighting in vim
+syntax on
 "
 " this sets the title in a gnome terminal window, shows which file is being edited by VIM
 set title
@@ -61,14 +64,14 @@ function! SKEL_spec()
 	exe "%s/specRPM_CREATION_NAME/" . expand("%:t:r") . "/ge"
 	setf spec
 endfunction
-autocmd BufNewFile	*.spec	call SKEL_spec()
-autocmd bnf             *.spec	call SKEL_spec()
-export git_branch=$(formattedGitBranch)
-echo $git_branch
-#PROMPT_COMMAND='echo -ne "\033]0;SOME TITLE HERE\007"'
+"autocmd BufNewFile	*.spec	call SKEL_spec()
+"autocmd bnf             *.spec	call SKEL_spec()
+"export git_branch=$(formattedGitBranch)
+"echo $git_branch
+"#PROMPT_COMMAND='echo -ne "\033]0;SOME TITLE HERE\007"'
 "
 " This set the title for a gnome terminal window, so directory and git branch
-PROMPT_COMMAND='echo -ne "\033]0; `pwd`  $git_branch \007"'
+"PROMPT_COMMAND='echo -ne "\033]0; `pwd`  $git_branch \007"'
 
 
 " filetypes
