@@ -10,6 +10,12 @@ esac
 
 export EDITOR=vi
 
+# Macro for terminal/tab name i.e. $ tn "NameOfTab"
+tn() {
+    echo -ne "\033]0;$1\007"
+}
+
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
